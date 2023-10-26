@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll } from "framer-motion";
-import React, { useState, useEffect, useRef } from "react";
 
 const LiIcon = ({ reference }) => {
   const { scrollYProgress } = useScroll({
@@ -10,7 +9,11 @@ const LiIcon = ({ reference }) => {
   });
 
   return (
-    <figure className="absolute left-0 stroke-black">
+    <motion.div
+      whileInView={{ scale: [0.2, 1.2] }}
+      transition={{ scale: [0, 1.2], ease: "easeInOut" }}
+      className="absolute left-11 -top-1 stroke-black"
+    >
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle
           className="stroke-pink-400 stroke-1 fill-none"
@@ -19,7 +22,7 @@ const LiIcon = ({ reference }) => {
           r="20"
         />
         <motion.circle
-          className="stroke-1 fill-white"
+          className="stroke-1 fill-blue-400"
           cx="78"
           cy="50"
           r="20"
@@ -32,7 +35,7 @@ const LiIcon = ({ reference }) => {
           r="10"
         />
       </svg>
-    </figure>
+    </motion.div>
   );
 };
 

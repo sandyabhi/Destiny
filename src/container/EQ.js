@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const Sec = () => {
+const EQ = () => {
   const data = [
     {
       emoji: "😊",
@@ -17,6 +17,12 @@ const Sec = () => {
     },
     {
       emoji: "😮",
+      title: "You attend a class reunion",
+      description:
+        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+    },
+    {
+      emoji: "😍",
       title: "You attend a class reunion",
       description:
         "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
@@ -66,23 +72,23 @@ const Sec = () => {
         />
       </div>
 
-      <div className="flex gap-2 justify-between overflow-x-scroll w-full">
+      <div className="flex justify-between overflow-x-scroll overflow-y-hidden gap-4 min-h-[250px] h-[250px] w-full">
         {/* Cards */}
 
         {data.map((item, i) => (
-          <>
-            <div className="bg-violet-200 px-8 py-6 w-[350px] rounded-3xl">
+          <div className="bg-violet-200 px-8 py-6 min-w-[300px] w-[300px] rounded-3xl">
+            <div>
               <div className="pb-4">{item.emoji}</div>
               <div>
                 <p className="text-base font-bold">{item.title}</p>
                 <p className="text-base">{item.description}</p>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>
   );
 };
 
-export default Sec;
+export default EQ;

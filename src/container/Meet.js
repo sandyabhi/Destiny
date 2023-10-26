@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const Thi = () => {
+const Meet = () => {
   return (
     <div className="rounded-3xl px-8 gap-2 flex flex-row justify-between bg-yellow-100 text-black w-full h-[650px]">
       <div className="w-[50%] px-4 font-bold flex flex-col justify-center items-center">
@@ -52,4 +52,4 @@ const Thi = () => {
   );
 };
 
-export default Thi;
+export default Meet;
