@@ -1,4 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Documentation
+
+## [LIVE](https://destiny-swart.vercel.app)
+
+## [VIDEO]()
+
+## [GITHUB](https://github.com/sandyabhi/Destiny)
+
+# Animated Next.js Website with Tailwind CSS, Framer Motion, and React Icons
+
+Create a visually appealing, animated website using Next.js, Tailwind CSS, Framer Motion, and React Icons. This project combines the power of Next.js for client-side rendering, Tailwind CSS for responsive styling, Framer Motion for smooth animations and transitions, and React Icons for easy-to-use icons.
+
+![Demo Animation](demo.gif)
+
+## Features
+
+- **Visually Appealing Design**: Craft a beautiful and engaging user interface that grabs users' attention.
+
+- **Smooth Animations**: Utilize Framer Motion for fluid animations and transitions, providing an interactive and delightful user experience.
+
+- **Pop-up Effect**: Implement pop-up animations with ease-in springs, making elements pop into view with style.
+
+- **Responsive Styling**: Use Tailwind CSS to create a responsive layout that looks great on all screen sizes and devices.
+
+- **Icon Integration**: Enhance your design with a wide range of icons from React Icons, covering various categories and styles.
+
+## Screens
+
+![img1](https://i.imgur.com/zvive75.png)
+
+![EQ](https://imgur.com/dzJrOu5.png)
+
+![meet](https://imgur.com/bXkO40G.png)
+
+![timeline](https://imgur.com/Ml08maJ.png)
+
+![skil](https://imgur.com/HyWwKMY.png)
+
+![certificate](https://imgur.com/ubbP546.png)
+
+![work](https://imgur.com/RRpXD4l.png)
+
+![footer](https://imgur.com/WnY1biw.png)
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/): A React framework for building fast and efficient web applications.
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for quickly styling your web project.
+- [Framer Motion](https://www.framer.com/motion/): A library for animations and transitions in React applications.
+- [React Icons](https://react-icons.github.io/react-icons/): A collection of popular icons for React applications.
 
 ## Getting Started
 
