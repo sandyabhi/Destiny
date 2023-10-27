@@ -1,6 +1,6 @@
 const VacancyCard = ({ title, description }) => {
   return (
-    <div className="p-6 bg-yellow-50 w-80 rounded-3xl">
+    <div className="p-6 bg-yellow-50 hover:bg-yellow-200 w-80 rounded-3xl">
       <h1 className="text-lg font-bold text-left">{title}</h1>
       <div className="flex flex-col items-center gap-2">
         <ul className="list-disc">

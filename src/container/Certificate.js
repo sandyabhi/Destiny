@@ -11,8 +11,8 @@ const Certificate = () => {
             <p className="text-base pb-2">We take privacy seriously</p>
             <p className="text-3xl font-bold pb-4">Before you get started</p>
             <p className="text-xl">
-              "We won't share your answers with anyone (and won't ever tell you
-              which friends said what about you)"
+              &quot;We won&apos;t share your answers with anyone (and won&apos;t
+              ever tell you which friends said what about you)&quot;
             </p>
             <span className="py-6">
               with love,{" "}

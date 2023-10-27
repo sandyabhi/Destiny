@@ -6,13 +6,6 @@ import { motion, useScroll } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 
 const TimeLine = () => {
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end, center start"],
-  });
-
   const data = [
     {
       title: "It's not as easy as 1-2-3.",
@@ -55,7 +48,7 @@ const TimeLine = () => {
         className="pb-14"
       >
         <p className="text-md">
-          Wrong with self-improvement & how we're fixing it.
+          Wrong with self-improvement & how we&apos;re fixing it.
         </p>
         <h1 className="text-3xl">Self-improvement. Ugh.</h1>
       </motion.div>
@@ -73,18 +66,6 @@ const TimeLine = () => {
           ))}
         </ul>
       </div>
-
-      {/* TimeLine */}
-      {/* <div ref={ref} className="relative mx-auto w-[75%] h-full">
-    
-        <motion.div className="absolute left-9 top-0 w-[4px] h-full border-2 border-black bg-black origin-top" />
-      
-        <ul className="w-full h-full flex flex-col items-start justify-between">
-          <Details />
-          <Details />
-          <Details />
-        </ul>
-      </div> */}
     </div>
   );
 };

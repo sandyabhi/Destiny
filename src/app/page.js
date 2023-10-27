@@ -11,23 +11,15 @@ import Meet from "@/container/Meet";
 export default function Home() {
   return (
     <main className="flex py-16 px-10 bg-white flex-col gap-10">
-      {/* <Navbar /> */}
-      {/* <div className="h-3/4 px-5 py-"> */}
-      {/* 
-      
-       */}
       <Main />
       <EQ />
       <Meet />
       <TimeLine />
       <Skill />
       <Certificate />
-
       <WorkWIthUs />
-
       <Vacancies />
       <hr className="border-slate-300" />
-
       <Footer />
     </main>
   );

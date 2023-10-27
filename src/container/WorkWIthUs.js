@@ -55,7 +55,7 @@ const WorkWIthUs = () => {
               whileInView={{ y: [20, 0], opacity: [0, 1] }}
               transition={{ duration: 0.7, ease: "easeInOut", type: "spring" }}
               className="w-12 h-12"
-              src="https://www.giantbomb.com/a/uploads/scale_small/8/87790/2469740-blinky.png"
+              src="assets/redinky.png"
             />
           </div>
 
@@ -63,8 +63,8 @@ const WorkWIthUs = () => {
             <h2> About</h2>
             <p>
               At ahead our goal is to make self-improvement dun and lasting. We
-              know there's a way how to make it work. And that's what aHead is
-              all about!
+              know there&apos;s a way how to make it work. And that&apos;s what
+              aHead is all about!
             </p>
           </div>
 

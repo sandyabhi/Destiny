@@ -5,10 +5,7 @@ const Footer = () => {
   return (
     <div className="pt-2 px-8 h-[300px] bg-white text-black flex flex-col items-center">
       <div className="py-4 flex flex-col items-center">
-        <img
-          className="w-10 h-10"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Circle_Ring_free_icon.svg/512px-Circle_Ring_free_icon.svg.png"
-        />
+        <img className="w-10 h-10" src="assets/pink-inky.png" />
         <p className="text-blue-600 text-3xl font-semibold">ahead</p>
       </div>
 
@@ -29,10 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="py-4">
-        <img
-          className="w-32 h-10"
-          src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo-640x221.jpg"
-        />
+        <img className="w-32 h-10" src="assets/appleStore.jpg" />
       </div>
 
       <div className="py-4">© 2023 Ahead app, All right reserved</div>

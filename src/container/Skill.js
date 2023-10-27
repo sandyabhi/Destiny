@@ -25,7 +25,7 @@ const Skill = () => {
                 whileInView={{ x: 0, opacity: [0, 1] }}
                 transition={{ duration: 0.7 }}
                 className="w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
+                src="/assets/star.webp"
               />
               <motion.div
                 whileInView={{ scale: [0, 1] }}
@@ -41,7 +41,7 @@ const Skill = () => {
                 whileInView={{ x: 0, opacity: [0, 1] }}
                 transition={{ duration: 0.7 }}
                 className="w-20 h-20 bg-yellow-500 rounded-full "
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
+                src="/assets/star.webp"
               />
               <motion.div
                 whileInView={{ scale: [0, 1] }}
@@ -57,7 +57,7 @@ const Skill = () => {
                 whileInView={{ x: 0, opacity: [0, 1] }}
                 transition={{ duration: 0.7 }}
                 className="w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
+                src="/assets/star.webp"
               />
               <motion.div
                 whileInView={{ scale: [0, 1] }}

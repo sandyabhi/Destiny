@@ -8,7 +8,7 @@ const EQ = () => {
       emoji: "😊",
       title: "You attend a class reunion",
       description:
-        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+        "You compare yourself with your peers achievements, instead of making your self-judgement more independent of others.",
       color: "blue",
     },
     {
