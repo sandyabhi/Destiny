@@ -2,7 +2,7 @@
 
 ## [LIVE](https://destiny-swart.vercel.app)
 
-## [VIDEO]()
+## [VIDEO](https://drive.google.com/file/d/1U_zvi3Jtu-HWuO-DodSAv36lwOQLUTAA/view?usp=sharing)
 
 ## [GITHUB](https://github.com/sandyabhi/Destiny)
 
