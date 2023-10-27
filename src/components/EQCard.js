@@ -3,7 +3,7 @@ const EQCard = ({ emoji, title, description, color }) => {
   return (
     <>
       <div
-        className={`${bgcolor} px-8 py-6 min-w-[300px] w-[300px] rounded-3xl`}
+        className={`${bgcolor} bg-violet-100 px-8 py-6 min-w-[300px] w-[300px] rounded-3xl`}
       >
         <div>
           <div className="pb-4">{emoji}</div>

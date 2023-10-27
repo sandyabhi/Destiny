@@ -4,13 +4,8 @@ const VacancyCard = ({ title, description }) => {
       <h1 className="text-lg font-bold text-left">{title}</h1>
       <div className="flex flex-col items-center gap-2">
         <ul className="list-disc">
-          {/* {description.map((item, i) => (
-            <li key={i} {item}></li>
-          ))} */}
           {description.map((desc, i) => (
-            <>
-              <li>{desc}</li>
-            </>
+            <li>{desc}</li>
           ))}
         </ul>
 
