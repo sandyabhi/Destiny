@@ -1,34 +1,76 @@
 "use client";
 
 import LiIcon from "@/components/LiIcon";
+import TimeLineCard from "@/components/TimeLineCard";
 import { motion, useScroll } from "framer-motion";
 import React, { useState, useEffect, useRef } from "react";
 
 const TimeLine = () => {
   const ref = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end, center start"],
   });
 
+  const data = [
+    {
+      title: "It's not as easy as 1-2-3.",
+      description:
+        "The journey of change may be long, but our sessions are quick. We get to the point and tell you what you want to know(and nothing else).",
+    },
+    {
+      title: "Old habits are hard to break.",
+      description:
+        "And bad behaviors die hard. Fortunately, we give you great, science-backed techniques to use.",
+    },
+    {
+      title: "You and your motivation don't have a long-term relationship.",
+      description:
+        "Luckily, we can proactively prepare you for the marathon, not just the race. Effective, memorable exercises will help you stick to your goals.",
+    },
+    {
+      title: "Books just don't offer practical.",
+      description:
+        "Remember when you learned to ride a bike just by reading? Yeah, we don't either. We help you take concrete small steps towards your goals. Learning just a bit, then immediately springing into action.",
+    },
+    {
+      title: "Inspiration is great, but then what.",
+      description:
+        "We make sure your energy from all the content you consume does not fizzle out.",
+    },
+  ];
+
   return (
-    <div className="rounded-3xl bg-slate-100 px-8 py-10 text-black h-[700px]">
+    <div className="rounded-3xl px-8 pt-10 pb-20 text-black h-[750px]">
       {/* Heading */}
-      <div className="pb-6">
+      <motion.div
+        whileInView={{
+          x: [-100, 0],
+          y: [30, 0],
+          scale: [0, 1],
+          opacity: [0, 1],
+        }}
+        transition={{ duration: 0.7, ease: "easeInOut" }}
+        className="pb-14"
+      >
         <p className="text-md">
           Wrong with self-improvement & how we're fixing it.
         </p>
         <h1 className="text-3xl">Self-improvement. Ugh.</h1>
-      </div>
+      </motion.div>
 
       {/* TL */}
       <div className="relative h-full">
         <motion.div className="absolute left-20 h-[80%] border-2 border-indigo-500" />
         <ul className="w-full h-[80%] flex flex-col items-start justify-between">
-          <Details />
-          <Details />
-          <Details />
-          <Details />
+          {data.map((item, i) => (
+            <TimeLineCard
+              key={i}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </ul>
       </div>
 
@@ -48,46 +90,3 @@ const TimeLine = () => {
 };
 
 export default TimeLine;
-
-const Details = () => {
-  const ref = useRef(null);
-
-  return (
-    <li className="relative w-full mr-10">
-      <LiIcon reference={ref} />
-      <motion.div
-        initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
-        className="ml-28 -top-4 absolute"
-      >
-        <h3 className="text-lg font-bold mb-2">It's not as easy as 1-2-3</h3>
-        <p className="text-md">
-          The journey of change may be long, but our sessions are quick. We get
-          to the point and tell you what you want to know(and nothing else).
-        </p>
-      </motion.div>
-    </li>
-    // <li
-    //   ref={ref}
-    //   className="my-8 first:mt-0 last:mb-0 w-[60%] flex flex-col items-center justify-between"
-    // >
-    //   <LiIcon reference={ref} />
-    //   <motion.div
-    //     initial={{ y: 50 }}
-    //     whileInView={{ y: 0 }}
-    //     transition={{ duration: 0.5, type: "spring" }}
-    //   >
-    //     <h3>Hello</h3>
-    //     <p>
-    //       Wrong with self-improvement & how we're fixing it. Self-improvement.
-    //       Ugh.
-    //     </p>
-    //     <p>
-    //       Wrong with self-improvement & how we're fixing it. Self-improvement.
-    //       Ugh.
-    //     </p>
-    //   </motion.div>
-    // </li>
-  );
-};

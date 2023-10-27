@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="bg-white text-black gap-2 flex justify-between items-center py-2 px-4 w-full z-30 fixed">
+    <div className="bg-white text-black gap-2 flex justify-between items-center py-2 px-16 w-full z-30 fixed">
       <div>
         <img
           className="w-10 h-10"

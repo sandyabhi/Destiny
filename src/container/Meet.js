@@ -4,15 +4,20 @@ import { motion } from "framer-motion";
 
 const Meet = () => {
   return (
-    <div className="rounded-3xl px-8 gap-2 flex flex-row justify-between bg-yellow-100 text-black w-full h-[650px]">
+    <div className="rounded-3xl px-8 gap-2 flex flex-row justify-between bg-orange-50 text-black w-full h-[650px]">
       <div className="w-[50%] px-4 font-bold flex flex-col justify-center items-center">
         <motion.div
-          whileInView={{ x: [-5, 0], y: [5, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.7 }}
+          whileInView={{
+            x: [-5, 0],
+            y: [5, 0],
+            scale: [0, 1],
+            opacity: [0, 1],
+          }}
+          transition={{ duration: 0.7, ease: "easeIn" }}
           className="pb-10"
         >
-          <p className="text-sm">Built out of frustration</p>
-          <p className="text-3xl">Meet the ahead app</p>
+          <p className="text-xl">Built out of frustration</p>
+          <p className="text-6xl font-bold">Meet the ahead app</p>
         </motion.div>
 
         <motion.div
@@ -33,16 +38,17 @@ const Meet = () => {
         /> */}
       </div>
       <motion.div
-        whileInView={{ x: [-5, 0], y: [5, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.7 }}
-        className="w-[50%] px-4 flex justify-center items-center"
+        whileInView={{ x: [-5, 0], y: [5, 0], scale: [0, 1], opacity: [0, 1] }}
+        transition={{ duration: 0.7, ease: "easeIn" }}
+        className="w-[50%] pl-4 pr-12 flex justify-center items-center"
       >
-        <div>
-          <p className="text-base">
+        <div className="text-xl">
+          <p>
             A personalized pocket coach that provides bite-sized ,
             science-driven tools to boost emotional intelligence.
           </p>
-          <p className="text-base">
+          <br />
+          <p>
             Think of it as a pocket cheerleader towards a better, more
             fulfilling
           </p>

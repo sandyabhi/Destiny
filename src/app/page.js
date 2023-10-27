@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer";
-import Main from "@/components/Home/Main";
+import Main from "@/container/Main";
 import Certificate from "@/container/Certificate";
 import Skill from "@/container/Skill";
 import TimeLine from "@/container/TimeLine";
@@ -22,6 +22,7 @@ export default function Home() {
       <TimeLine />
       <Skill />
       <Certificate />
+
       <WorkWIthUs />
 
       <Vacancies />

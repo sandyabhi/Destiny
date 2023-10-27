@@ -1,4 +1,5 @@
 "use client";
+import EQCard from "@/components/EQCard";
 import { motion } from "framer-motion";
 
 const EQ = () => {
@@ -8,38 +9,43 @@ const EQ = () => {
       title: "You attend a class reunion",
       description:
         "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+      color: "blue",
+    },
+    {
+      emoji: "😳",
+      title: "You get a promotion at work",
+      description:
+        "You question yourself and wonder when they'll realize you're an unqualified imposter, instead of trusting yourself $ your abilities.",
+      color: "indigo",
+    },
+    {
+      emoji: "😠",
+      title: "You argue with a colleague",
+      description:
+        "You get angry and defensive, Instead of staying open and working towards common ground.",
+      color: "violet",
     },
     {
       emoji: "😒",
-      title: "You attend a class reunion",
+      title: "You are at a lively dinner party",
       description:
-        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+        "You play on your phone, instead of confidently approaching strangers and string up a chat.",
+      color: "orange",
     },
     {
-      emoji: "😮",
-      title: "You attend a class reunion",
+      emoji: "😬",
+      title: "You hit dead end in a negotiation",
       description:
-        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
-    },
-    {
-      emoji: "😍",
-      title: "You attend a class reunion",
-      description:
-        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
-    },
-    {
-      emoji: "😍",
-      title: "You attend a class reunion",
-      description:
-        "You compare yourself with your peers' achievements, instead of making your self-judgement more independent of others.",
+        "You get nervous, frazzled, and frustrated instead of staying optimistic and solution-oriented.",
+      color: "yellow",
     },
   ];
 
   return (
-    <div className="rounded-3xl bg-slate-100 px-8 py-10 text-black gap-2 flex flex-col justify-between h-[650px]">
+    <div className="rounded-3xl px-8 py-10 text-black gap-2 flex flex-col justify-between h-[650px]">
       <div className="flex flex-row w-full justify-between gap-4">
         <div className="w-[30%] p-5">
-          <p className="text-xl">EQ beats IQ</p>
+          <p className="text-3xl font-bold">EQ beats IQ</p>
         </div>
         <div className="w-[30%] p-5 text-base">
           <p>
@@ -76,15 +82,13 @@ const EQ = () => {
         {/* Cards */}
 
         {data.map((item, i) => (
-          <div className="bg-violet-200 px-8 py-6 min-w-[300px] w-[300px] rounded-3xl">
-            <div>
-              <div className="pb-4">{item.emoji}</div>
-              <div>
-                <p className="text-base font-bold">{item.title}</p>
-                <p className="text-base">{item.description}</p>
-              </div>
-            </div>
-          </div>
+          <EQCard
+            key={i}
+            emoji={item.emoji}
+            title={item.title}
+            description={item.description}
+            color={item.color}
+          />
         ))}
       </div>
     </div>

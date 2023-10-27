@@ -14,7 +14,15 @@ const Certificate = () => {
               "We won't share your answers with anyone (and won't ever tell you
               which friends said what about you)"
             </p>
-            <span className="py-6">with love, Sandy</span>
+            <span className="py-6">
+              with love,{" "}
+              <motion.span
+                whileInView={{ scale: [0, 1], opacity: [0, 1] }}
+                transition={{ duration: 1.8, ease: "easeOut" }}
+              >
+                Sandeep
+              </motion.span>
+            </span>
           </div>
 
           <motion.div

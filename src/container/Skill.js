@@ -69,82 +69,8 @@ const Skill = () => {
               </motion.div>
             </div>
           </div>
-          {/* <div className="-bottom-10 absolute w-[90%] -top-10 flex flex-row justify-between items-center text-white">
-            <div className="relative">
-              <motion.img
-                whileInView={{ x: 0, opacity: [0, 1] }}
-                transition={{ duration: 0.7 }}
-                className="left-0 top-0 absolute w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
-              />
-              <div>Answer questions on your social skills</div>
-            </div>
-
-            <div className="relative">
-              <p className="left-0 top-10 absolute w-36 py-2 px-4 rounded-xl bg-sky-300">
-                Anonymous 1
-              </p>
-              <p className="w-6 h-6 bg-sky-300 rounded-full" />
-            </div>
-
-            <div className="relative">
-              <p className="-left-15 -top-14 absolute w-36 py-2 px-4 rounded-xl bg-orange-300">
-                Anonymous 2
-              </p>
-              <p className="w-6 h-6 bg-orange-300 rounded-full" />
-            </div>
-
-            <div className="relative">
-              <p className="left-0 top-10 absolute w-36 py-2 px-4 rounded-xl bg-green-400">
-                Anonymous 3
-              </p>
-              <p className="w-6 h-6 bg-green-400 rounded-full" />
-            </div>
-          </div> */}
-
-          {/* <div className="w-[80%]  border-2 border-yellow-400 border-dashed" /> */}
         </div>
       </div>
-      {/* <div className="flex items-center w-full">
-        <div className="relative w-full flex justify-center">
-          <div className="border-2 border-yellow-400 border-dashed w-[90%]" />
-          <div className="w-[95%] absolute -top-10 flex flex-row justify-between items-center">
-           
-            <div className="relative">
-              <motion.img
-                whileInView={{ x: 0, opacity: [0, 1] }}
-                transition={{ duration: 0.7 }}
-                className="left-0 top-0 absolute w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
-              />
-              <div>Answer questions on your social skills</div>
-            </div>
-            <div>
-              <motion.img
-                whileInView={{ x: 0, opacity: [0, 1] }}
-                transition={{ duration: 0.7 }}
-                className="left-0 top-0 absolute w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
-              />
-              <div>
-                Let others anonymously answer the same questions about you
-              </div>
-            </div>
-            <div>
-              <motion.img
-                whileInView={{ x: 0, opacity: [0, 1] }}
-                transition={{ duration: 0.7 }}
-                className="left-0 top-0 absolute w-20 h-20 bg-yellow-500 rounded-full"
-                src="https://static.vecteezy.com/system/resources/thumbnails/021/664/704/small/gold-star-shotting-gold-star-transparent-gold-bokeh-stars-free-free-png.png"
-              />
-              <div>
-                Find out where you and others see things the same way - and
-                where not!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       {/* Card */}
       <div className="w-[80%] border-2 border-blue-100 h-52 shadow-md rounded-2xl">
@@ -195,8 +121,6 @@ const Skill = () => {
               <p className="w-6 h-6 bg-green-400 rounded-full" />
             </div>
           </div>
-
-          {/* <div className="w-[80%]  border-2 border-yellow-400 border-dashed" /> */}
         </div>
       </div>
     </div>
